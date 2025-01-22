@@ -13,7 +13,7 @@ try {
     $mail->isSMTP();
     $mail->Host = 'smtp.zoho.com';  // Change to Zoho/Gmail SMTP
     $mail->SMTPAuth = true;
-    $mail->Username = 'info@northhillssitters.pet'; // Your email
+    $mail->Username = 'northhillspetsitters@gmail.com'; // Your email
     $mail->Password = 'your_password'; // Use App Password for security
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
@@ -28,8 +28,8 @@ try {
     $notes = $_POST['notes'];
 
     // Recipient & Content
-    $mail->setFrom('info@northhillssitters.pet', 'North Hills Sitters');
-    $mail->addAddress('your-email@example.com'); // Change to your email
+    $mail->setFrom('northhillspetsitters@gmail.com', 'North Hills Sitters');
+    $mail->addAddress('northhillspetsitters@gmail.com'); // Change to your email
     $mail->isHTML(true);
     $mail->Subject = "New Appointment Request";
     $mail->Body = "
